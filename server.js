@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const statusMonitor = require("express-status-monitor")();
 
 var utils = require("./routes/generator/utils");
 const casual = require("casual");
@@ -13,6 +14,7 @@ const db = low(adapter);
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(statusMonitor);
 
 const port = 3000;
 const n = 10; //Number of summoners to generate
@@ -119,6 +121,8 @@ app.get("/val/match/v1/matches/:matchId", (req, res) => {
 app.get("/", (req, res) => {
   res.send("ValorSight Mock running successfully!");
 });
+
+app.get("/status", statusMonitor.pageRoute);
 
 // app.get("/init", (req, res) => {
 //   db.defaults({ summoners: [], matches: [] }).write();
