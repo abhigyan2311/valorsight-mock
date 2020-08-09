@@ -127,9 +127,9 @@ app.get("/status", statusMonitor.pageRoute);
 // app.get("/init", (req, res) => {
 //   db.defaults({ summoners: [], matches: [] }).write();
 //   res.send("Successfully initialized DB!");
-// });
+//  });
 
-// app.get("/generate", (req, res) => {
+//  app.get("/generate", (req, res) => {
 //   let matchIds = [];
 //   for (var i = 0; i < n; i++) {
 //     var summoner = {};
@@ -158,9 +158,10 @@ app.get("/status", statusMonitor.pageRoute);
 //     matchObj.players = playerList;
 //     //teams
 //     let teams = [];
+//     let arr = ["Red", "Blue"];
 //     teamBool = casual.boolean;
 //     for (var t = 0; t < 2; t++) {
-//       teams.push(utils.generateTeamDTO(t, teamBool));
+//       teams.push(utils.generateTeamDTO(arr[t], teamBool));
 //     }
 //     matchObj.teams = teams;
 //     //roundResults
