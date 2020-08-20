@@ -3,7 +3,7 @@ const casual = require("casual");
 const plantsite = ["A", "B", "C"];
 const rrcd = ["Defuse", "Elimination"];
 const damtype = ["Weapon", "knife"];
-const mapId = ["/Game/Maps/Bonsai/Bonsai", "/Game/Maps/Duality/Duality", "/Game/Maps/Poveglia/Range", "/Game/Maps/Triad/Triad", "/Game/Maps/Poveglia/Range_NewPlayerExperience_Master"];
+const mapId = ["/Game/Maps/Ascent/Ascent", "/Game/Maps/Bonsai/Bonsai", "/Game/Maps/Duality/Duality", "/Game/Maps/Triad/Triad"];
 const queueID = ["unrated", "spike_rush", "competitive"];
 const weapons = [
 	"0AFB2636-4093-C63B-4EF1-1E97966E2A3E",
@@ -32,16 +32,17 @@ const gameModes = ["/Game/GameModes/Bomb/BombGameMode.BombGameMode_C", "/Game/Ga
 const roundCeremon = ["CeremonyDefault", "CeremonyFlawless", "CeremonyCloser"];
 const charId = [
 	"5F8D3A7F-467B-97F3-062C-13ACF203C006",
-	"F94C3B30-42BE-E959-889C-5AA313DBA261",
+	"9F0D8BA9-4140-B941-57D3-A7AD57C6B417",
 	"117ED9E3-49F3-6512-3CCF-0CADA7E3823B",
-	"DED3520F-4264-BFED-162D-B080E2ABCCF9",
+	"ADD6443A-41BD-E414-F6AD-E58D267F4E95",
+	"8E253930-4C05-31DD-1B6C-968525494517",
+	"EB93336A-449B-9C1B-0A54-A891F7921D69",
+	"F94C3B30-42BE-E959-889C-5AA313DBA261",
+	"A3BFB853-43B2-7238-A4F1-AD90E9E46BCC",
+	"569FDD95-4D10-43AB-CA70-79BECC718B46",
 	"320B2A48-4D9B-A075-30F1-1F93A9B638FA",
 	"707EAB51-4836-F488-046A-CDA6BF494859",
-	"EB93336A-449B-9C1B-0A54-A891F7921D69",
-	"9F0D8BA9-4140-B941-57D3-A7AD57C6B417",
-	"569FDD95-4D10-43AB-CA70-79BECC718B46",
-	"8E253930-4C05-31DD-1B6C-968525494517",
-	"ADD6443A-41BD-E414-F6AD-E58D267F4E95",
+	"1E58DE9C-4950-5125-93E9-A0AEE9F98746",
 ];
 
 module.exports = {
