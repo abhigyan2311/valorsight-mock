@@ -109,7 +109,7 @@ module.exports = {
 		return teamObj;
 	},
 
-	generateRoundResultDTO: function (r) {
+	generateRoundResultDTO: function (r, puuid) {
 		let roundResObj = {};
 		roundResObj.roundNum = r;
 		roundResObj.roundResult = roundResultKey[Math.floor(Math.random() * roundResultKey.length)];
@@ -134,6 +134,7 @@ module.exports = {
 		for (var p = 0; p < 10; p++) {
 			roundResObj.playerStats.push(generatePlayerStatsDTO());
 		}
+		roundResObj.playerStats[0].puuid = puuid;
 		roundResObj.roundResultCode = rrcd[Math.floor(Math.random() * rrcd.length)];
 		return roundResObj;
 	},

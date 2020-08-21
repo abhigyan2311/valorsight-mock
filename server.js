@@ -165,7 +165,7 @@ app.get("/generate", (req, res) => {
 		//roundResults
 		matchObj.roundResults = [];
 		for (var r = 0; r < 12; r++) {
-			matchObj.roundResults.push(utils.generateRoundResultDTO(r));
+			matchObj.roundResults.push(utils.generateRoundResultDTO(r, masterIdList[matchIndex]));
 		}
 		//Push to DB
 		db.get("matches").push({ id: matchIds[matchIndex], data: matchObj }).write();
