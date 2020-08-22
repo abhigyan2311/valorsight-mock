@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 app.use(statusMonitor);
 
 const port = 3000;
-const n = 10; //Number of summoners to generate
+const n = 2; //Number of summoners to generate
 const activeShards = ["na", "euw", "oc"];
 
 app.get("/riot/account/v1/accounts/by-puuid/:puuid", (req, res) => {
@@ -131,7 +131,7 @@ app.get("/generate", (req, res) => {
 		summoner.tagLine = casual.integer((from = 1), (to = 1000));
 		summoner.activeShard = activeShards[Math.floor(Math.random() * activeShards.length)];
 		summoner.game = "val";
-		summoner.matchList = new Array(2).fill().map(() => casual.uuid);
+		summoner.matchList = new Array(10).fill().map(() => casual.uuid);
 		matchIds.push(summoner.matchList);
 		db.get("summoners").push(summoner).write();
 		console.log("summoner saved: ", summoner.puuid);
