@@ -138,8 +138,7 @@ app.get("/status", statusMonitor.pageRoute);
 // 	}
 // 	let masterIdList = [];
 // 	for (let t of summonerIdsList) {
-// 		masterIdList.push(t);
-// 		masterIdList.push(t);
+// 		masterIdList = [...masterIdList, ...Array(10).fill(t)];
 // 	}
 // 	console.log(masterIdList);
 // 	matchIds = [].concat.apply([], matchIds);
