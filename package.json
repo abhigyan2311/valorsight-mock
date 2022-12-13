@@ -22,7 +22,7 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "casual": "^1.6.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-status-monitor": "^1.3.3",
     "lowdb": "^1.0.0"
   }
